@@ -25,43 +25,41 @@
      </item>
      <item row="0" column="0">
       <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit_2"/>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLineEdit" name="lineEdit_3"/>
-       </item>
        <item row="0" column="0">
         <widget class="QLineEdit" name="lineEdit"/>
        </item>
-       <item row="1" column="2">
+       <item row="1" column="1">
         <widget class="QLabel" name="var3">
          <property name="text">
-          <string>TextLabel</string>
+          <string>Number 3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="var1">
+         <property name="text">
+          <string>Number 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="var4">
+         <property name="text">
+          <string>Number 4</string>
          </property>
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QLabel" name="var1">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_4"/>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLabel" name="var4">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
         <widget class="QLabel" name="var2">
          <property name="text">
-          <string>TextLabel</string>
+          <string>Number 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="Add">
+         <property name="text">
+          <string>Add</string>
          </property>
         </widget>
        </item>

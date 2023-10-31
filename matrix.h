@@ -4,27 +4,24 @@
 
 class matrix
 {
-    int arr[2][2];
+    int arr[2][2] {};
+    int data[4];
 public:
+    int i = 0, k = 0, inp = 0;
     matrix();
-    int getArr(int col, int row){return arr[col][row];}
-    void setArr(int data){for(int i = 0; i < 2 ; i++){
-            for(int k = 0; k < 2; k++){
-                arr[i][k] = data;
-            }
-        }
-    }
+    int getArr(int point);
+    //int getArr1(int point);
+    void setArr(int data);
 
-    friend void operator >> (matrix& inp, int data){
+    void convertArr();
+
+    friend void operator << (matrix& inp, int data){
         inp.setArr(data);
     }
 
-    friend void operator << (matrix& inp, int* arr){
-        for(int i = 0; i <  2; i++){
-            for(int k = 0; k < 2; k++){
-
-            }
-        }
+    friend int operator >> (matrix& inp, int point){
+        int variable = inp.getArr(point);
+        return variable;
     }
 };
 

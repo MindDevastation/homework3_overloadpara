@@ -20,6 +20,8 @@ public:
 private slots:
     void on_check_clicked();
 
+    void on_Add_clicked();
+
 private:
     Ui::MatrixDisplay *ui;
 };

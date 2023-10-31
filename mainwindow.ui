@@ -20,14 +20,28 @@
       <item>
        <widget class="QPushButton" name="EqualOverload">
         <property name="text">
-         <string>EqualOverload</string>
+         <string>== Overload</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="matrixOverload">
         <property name="text">
-         <string>&gt;&gt; Overload</string>
+         <string>&gt;&gt; Overload </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="prefixDecr">
+        <property name="text">
+         <string>Prefix -- Overload</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="postfixOverload">
+        <property name="text">
+         <string>Postfix -- Overload</string>
         </property>
        </widget>
       </item>

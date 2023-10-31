@@ -30,6 +30,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         equaloverloaddisplay.h equaloverloaddisplay.cpp equaloverloaddisplay.ui
         matrixdisplay.h matrixdisplay.cpp matrixdisplay.ui
         matrix.h matrix.cpp
+        prefixdecrementdisplay.h prefixdecrementdisplay.cpp prefixdecrementdisplay.ui
+        prefixdecrement.h prefixdecrement.cpp
+        postfixdecrementdisplay.h postfixdecrementdisplay.cpp postfixdecrementdisplay.ui
+        postfixdecrement.h postfixdecrement.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     OverloadDisplay = new EqualOverloadDisplay(this);
     matrix = new class MatrixDisplay(this);
+    prefixDecrement = new PrefixDecrementDisplay(this);
+    postfixDecrement = new PostfixDecrementDisplay(this);
 }
 
 MainWindow::~MainWindow()
@@ -25,5 +27,17 @@ void MainWindow::on_EqualOverload_clicked()
 void MainWindow::on_matrixOverload_clicked()
 {
     matrix -> show();
+}
+
+
+void MainWindow::on_prefixDecr_clicked()
+{
+    prefixDecrement -> show();
+}
+
+
+void MainWindow::on_postfixOverload_clicked()
+{
+    postfixDecrement -> show();
 }
 

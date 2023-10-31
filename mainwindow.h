@@ -5,6 +5,8 @@
 #include "equaloverload.h"
 #include "equaloverloaddisplay.h"
 #include "matrixdisplay.h"
+#include "prefixdecrementdisplay.h"
+#include "postfixdecrementdisplay.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,12 +22,18 @@ public:
 
     EqualOverloadDisplay* OverloadDisplay;
     MatrixDisplay* matrix;
+    PrefixDecrementDisplay* prefixDecrement;
+    PostfixDecrementDisplay* postfixDecrement;
 
 
 private slots:
     void on_EqualOverload_clicked();
 
     void on_matrixOverload_clicked();
+
+    void on_prefixDecr_clicked();
+
+    void on_postfixOverload_clicked();
 
 private:
     Ui::MainWindow *ui;

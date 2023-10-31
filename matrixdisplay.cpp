@@ -1,5 +1,6 @@
 #include "matrixdisplay.h"
 #include "ui_matrixdisplay.h"
+#include <QString>
 
 MatrixDisplay::MatrixDisplay(QWidget *parent) :
     QDialog(parent),
@@ -15,10 +16,22 @@ MatrixDisplay::~MatrixDisplay()
 
 void MatrixDisplay::on_check_clicked()
 {
-    int vari1;
-    vari1 >> ui->lineEdit->text().toInt();
-    ui->var1->setNum(vari1);
-    ui->var2->setNum(this->Matrix.getArr(0,0));
+    //this->Matrix.convertArr();
+    ui->var1->setNum(Matrix >> 0);
+    ui->var2->setNum(Matrix >> 1);
+    ui->var3->setNum(Matrix >> 2);
+    ui->var4->setNum(Matrix >> 3);
+
+}
+
+
+void MatrixDisplay::on_Add_clicked()
+{
+    if(this->Matrix.inp >= 3){
+        ui->Add->setEnabled(false);
+    }
+    Matrix << ui->lineEdit->text().toInt();
+        ui->lineEdit->clear();
 
 }
 
